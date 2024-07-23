@@ -1,6 +1,13 @@
-FROM ubuntu:latest
+FROM ubuntu:22.04
 
-# Update package list and install Python, pip, git, and build tools
+# Install prerequisites and Python 3.10
+RUN apt-get update && apt-get install -y \
+    software-properties-common
+
+# Add deadsnakes PPA for Python 3.10
+RUN add-apt-repository ppa:deadsnakes/ppa
+
+# Update again and install Python 3.10 and other dependencies
 RUN apt-get update && apt-get install -y \
     python3.10 \
     python3.10-distutils \
