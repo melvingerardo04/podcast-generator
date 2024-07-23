@@ -1,6 +1,6 @@
 name: "Podcast Generator"
 author: "Melvin Gerardo"
-description:"Generates a feed for a podcast from a YAML file"
+description: "Generates a feed for a podcast from a YAML file"
 runs:
   using: "docker"
   image: "Dockerfile"
