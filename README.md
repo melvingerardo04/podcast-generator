@@ -1,1 +1,1 @@
-# prodcast-generator
+# podcast-generator
